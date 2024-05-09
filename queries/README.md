@@ -6,7 +6,7 @@ Endor Labs' platform is **API-first**, so _all data is available via the API_; t
 
 ## Use notes
 
-All examples that use `endorctl` assume that you have an authenticated session. That means one of:
+All examples that use `endorctl` (files that begin `cli-`) assume that you have an authenticated session. That means one of:
 
 * You've run `endorctl init --method=METHOD_NAME` successfully on the local machine
 * You've generated an API key and secret, and set the relevante environment variables correctly
@@ -18,4 +18,4 @@ Use `endorctl api list -r Project --field-mask 'uuid' --page-size=1` to quickly 
 
 -----
 
-All examples that use `curl` assume you have an API key and secret in the same environment variables `endorctl` would expect, and that you've set up your host so that `curl` can traverse any egress controls on your network transparently.
+All examples that use `curl` (files that begin `curl-`) assume you have an API key and secret in the same environment variables `endorctl` would expect, and that you've set up your host so that `curl` can traverse any egress controls on your network transparently.
